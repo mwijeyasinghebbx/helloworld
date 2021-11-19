@@ -23,3 +23,10 @@ workflows:
             branches:
               ignore:
                 - main
+  build2:
+    jobs:
+      - build:
+          filters:
+            branches:
+              ignore:
+                - main                
