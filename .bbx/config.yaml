@@ -6,6 +6,7 @@ runners:
   
 jobs:   
  hello-world:
+  resource_spec: micro
   runner: centos-runner
   steps:
    - run:
