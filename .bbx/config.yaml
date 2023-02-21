@@ -7,7 +7,7 @@ runners:
 jobs:   
  hello-world:
   resource_spec: micro
-  runner: centos-runner
+  runner: ubuntu-runner
   steps:
    - run:
       name: Say Hello World
