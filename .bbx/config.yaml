@@ -1,8 +1,8 @@
 runners:
  ubuntu-runner:
-  image: public.ecr.aws/y2s4f3y9/ubuntu-generic:latest
+  image: ubuntu
  centos-runner:
-  image: public.ecr.aws/y2s4f3y9/centos-generic:latest  
+  image: centos
   
 jobs:   
  hello-world:
