@@ -1,9 +1,12 @@
 runners:
- local-runner:
+ ubuntu-runner:
   image: public.ecr.aws/y2s4f3y9/ubuntu-generic:latest
+ centos-runner:
+  image: public.ecr.aws/y2s4f3y9/centos-generic:latest  
+  
 jobs:   
  hello-world:
-  runner: local-runner
+  runner: centos-runner
   steps:
    - run:
       name: Say Hello World
