@@ -12,7 +12,7 @@ jobs:
    - run:
       name: Say Hello World
       command: |
-       echo "bbbbbbbbbb" 
+       echo "boooooooooo" 
 workflows:
  hello-world-workflow:
   jobs:
