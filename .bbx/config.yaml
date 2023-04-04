@@ -1,1 +1,19 @@
-a
+runners:
+ ubuntu-runner:
+  image: ubuntu
+ centos-runner:
+  image: centos
+  
+jobs:   
+ hello-world:
+  resource_spec: micro
+  runner: ubuntu-runner
+  steps:
+   - run:
+      name: Say Hello World
+      command: |
+       echo "hello" 
+workflows:
+ hello-world-workflow:
+  jobs:
+   - hello-world
