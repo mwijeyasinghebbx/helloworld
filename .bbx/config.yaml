@@ -1,18 +1,16 @@
 runners:
- ubuntu-runner:
-  image: ubuntu
- centos-runner:
-  image: centos
-  
+ local-runner:
+  image: public.ecr.aws/y2s4f3y9/ubuntu-generic:latest
 jobs:   
  hello-world:
   resource_spec: micro
-  runner: ubuntu-runner
+  runner: local-runner
+  current_working_directory: ~/
   steps:
    - run:
       name: Say Hello World
-      command: |
-       echo "booooooooooooooooooooooooo" 
+      command: echo "Hello World" 
+      
 workflows:
  hello-world-workflow:
   jobs:
