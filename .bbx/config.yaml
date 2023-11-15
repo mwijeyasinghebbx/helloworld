@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 runners:
  ubuntu-runner:
   image: ubuntu
