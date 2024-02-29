@@ -1,6 +1,3 @@
-# Example config file to use as a starting point.
-# Please visit https://docs.beetleboxci.com/docs/config/configuration-yaml for guidance on setting up your configuration file.
-
 # Define a runner that will be used to run a job
 runners:
  ubuntu-runner:
