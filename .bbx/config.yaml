@@ -5,7 +5,7 @@ jobs:
  hello-world:
   resource_spec: micro
   runner: local-runner
-  current_working_directory: ~/
+  current_working_directory: ~/ 
   steps:
    - run:
       name: Say Hello World
@@ -13,8 +13,5 @@ jobs:
       
 workflows:
  hello-world-workflow:
-   triggers:
-   - manual 
-   - pull_request
   jobs:
    - hello-world
