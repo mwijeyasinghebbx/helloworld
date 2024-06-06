@@ -13,5 +13,8 @@ jobs:
       
 workflows:
  hello-world-workflow:
+   triggers:
+   - manual 
+   - pull_request
   jobs:
    - hello-world
